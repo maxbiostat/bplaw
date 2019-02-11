@@ -19,7 +19,7 @@ parameters{
   real<lower=0> phi[3];
 }
 transformed parameters{
-    real lconst = -log_diff_exp( (1-alpha)*log(x_min)-log(alpha-1),
+    real lconst = log_diff_exp( (1-alpha)*log(x_min)-log(alpha-1),
   -phi[1] + diff_function_logintegral(alpha,
                                         exp(-phi[2]), // z
                                         exp(-phi[3]), // w
