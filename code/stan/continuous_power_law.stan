@@ -1,3 +1,4 @@
+
 functions{
     real power_law_lpdf(real x, real a, real m){
      return ( log(a-1)-log(m) -a *( log(x) - log(m)) );
